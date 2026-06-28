@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "rhythmos_ios",
+  "project_id": "432e41b2-68ce-430e-b2d7-ff708aeef5fc"
+}
