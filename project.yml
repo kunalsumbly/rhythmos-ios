@@ -1,0 +1,32 @@
+name: RhythmOS
+options:
+  bundleIdPrefix: com.rhythmos
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    GENERATE_INFOPLIST_FILE: YES
+    TARGETED_DEVICE_FAMILY: "1"
+targets:
+  RhythmOS:
+    type: application
+    platform: iOS
+    sources:
+      - Sources
+      - Resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.rhythmos.app
+        INFOPLIST_KEY_CFBundleDisplayName: Rhythm
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+schemes:
+  RhythmOS:
+    build:
+      targets:
+        RhythmOS: all
+    run:
+      config: Debug

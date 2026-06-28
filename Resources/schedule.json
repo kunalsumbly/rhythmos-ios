@@ -1,0 +1,62 @@
+{
+  "hero": {
+    "office": { "time": "21:00", "label": "Night deep block", "sub": "One problem only — stop by 10:45", "start": 21, "end": 22.75 },
+    "home": { "time": "9:00", "label": "Morning deep block", "sub": "Your one unbroken window", "start": 9, "end": 11.5 }
+  },
+  "blocks": {
+    "office": [
+      { "time": "7:00", "label": "Ritual", "sub": "Exercise + routine", "kind": "sage" },
+      { "time": "7:45", "label": "Commute in", "sub": "Study slot", "kind": "amber" },
+      { "time": "10:30", "label": "Meetings", "sub": "Syncs, stand-ups", "kind": "plain" },
+      { "time": "12:00", "label": "Lunch + walk", "sub": "Daylight reset", "kind": "sage" },
+      { "time": "13:00", "label": "Focus pocket", "sub": "~1 hr, reviews", "kind": "amber" },
+      { "time": "15:30", "label": "Office block", "sub": "Collab + comms", "kind": "plain" },
+      { "time": "17:30", "label": "Commute home", "sub": "Decompress", "kind": "sage" },
+      { "time": "21:00", "label": "Night deep block", "sub": "One problem", "kind": "amber" },
+      { "time": "23:00", "label": "Wind-down", "sub": "Protect sleep", "kind": "sage" }
+    ],
+    "home": [
+      { "time": "7:00", "label": "Ritual", "sub": "Exercise + routine", "kind": "sage" },
+      { "time": "8:00", "label": "Triage", "sub": "Light admin", "kind": "plain" },
+      { "time": "9:00", "label": "Deep block", "sub": "Peak, ~2.5 hrs", "kind": "amber" },
+      { "time": "11:30", "label": "Comms batch", "sub": "Slack + email", "kind": "plain" },
+      { "time": "12:30", "label": "Lunch + walk", "sub": "Reset", "kind": "sage" },
+      { "time": "14:00", "label": "Second focus", "sub": "Or meetings", "kind": "amber" },
+      { "time": "16:00", "label": "Plan / review", "sub": "Mon plan · Fri review", "kind": "plain" },
+      { "time": "18:30", "label": "Exercise + dinner", "sub": "Ease the day down", "kind": "sage" },
+      { "time": "22:30", "label": "Earlier night", "sub": "Bank the sleep", "kind": "sage" }
+    ]
+  },
+  "practices": {
+    "office": [
+      { "id": "deep", "icon": "brain.head.profile", "accent": "amber", "label": "Guard the night deep block", "detail": "One problem only, ~1.5–2 hrs after dinner. Not three tasks crammed in — one. Stop by ~10:45 so the mind can come down." },
+      { "id": "commute", "icon": "headphones", "accent": "sage", "label": "Make the commute count", "detail": "Study or audio learning on the way in; decompress on the way out. Don't carry work home in your head." },
+      { "id": "one", "icon": "target", "accent": "amber", "label": "Name the one outcome first", "detail": "Before Slack or email, write the single thing that must be true by tonight. Intent before the inbox sets it for you." },
+      { "id": "recover", "icon": "wind", "accent": "sage", "label": "Take the lunch walk", "detail": "Your only daylight reset on an office day. Step out at noon — a walk and a few rounds of breathwork." },
+      { "id": "winddown", "icon": "moon", "accent": "sage", "label": "Wind down before bed", "detail": "Stop deep work ~30 min before lights out. The 7–7.5 hours of sleep is the floor everything compounds on." }
+    ],
+    "home": [
+      { "id": "deep", "icon": "brain.head.profile", "accent": "amber", "label": "Guard the morning deep block", "detail": "9:00–11:30 with no commute eating the day — your one genuinely unbroken window. Phone away, hardest thing first." },
+      { "id": "commute", "icon": "headphones", "accent": "sage", "label": "Bank the reclaimed hours", "detail": "No commute today. Spend the saved 2–3 hrs on the study slot and a real break — not on backfilling meetings." },
+      { "id": "one", "icon": "target", "accent": "amber", "label": "Name the one outcome first", "detail": "Before Slack or email, write the single thing that must be true by tonight. Intent before the inbox sets it for you." },
+      { "id": "recover", "icon": "wind", "accent": "sage", "label": "Keep the recovery block", "detail": "You already move morning and evening — protect it. A midday walk plus breathwork keeps the afternoon from sagging." },
+      { "id": "winddown", "icon": "moon", "accent": "sage", "label": "Wind down before bed", "detail": "Stop deep work ~30 min before lights out. The 7–7.5 hours of sleep is the floor everything compounds on." }
+    ]
+  },
+  "arc": {
+    "office": {
+      "pts": [[7,0.30],[8,0.55],[8.75,0.40],[10,0.55],[10.75,0.62],[12,0.45],[13,0.52],[14,0.50],[15.5,0.60],[17,0.42],[18.25,0.30],[19.5,0.50],[21,0.74],[22.5,0.50],[23.75,0.25]],
+      "markers": [
+        { "t": 21, "e": 0.74, "label": "Night peak — deep work", "accent": "amber", "above": true },
+        { "t": 12, "e": 0.45, "label": "Lunch reset", "accent": "sage", "above": false }
+      ]
+    },
+    "home": {
+      "pts": [[7,0.35],[8,0.60],[9.25,0.88],[10.25,0.96],[11.5,0.74],[12.5,0.55],[14,0.60],[15.5,0.55],[17,0.45],[18.5,0.40],[20.5,0.50],[22.5,0.30]],
+      "markers": [
+        { "t": 10.25, "e": 0.96, "label": "Peak — deep work", "accent": "amber", "above": true },
+        { "t": 12.5, "e": 0.55, "label": "Lunch reset", "accent": "sage", "above": false }
+      ]
+    }
+  }
+}
